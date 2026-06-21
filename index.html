@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Studio DG Apps creates clean, thoughtful iOS apps including Say What Now?, Fit Check Pro, Minesweeper Reimagined, and Dates Reminders." />
+  <title>Studio DG Apps</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Studio DG Apps</a>
+      <div class="nav-links">
+        <a href="index.html#apps">Apps</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent iOS Development Studio</p>
+        <h1>Simple, polished apps built for everyday moments.</h1>
+        <p class="lead">
+          Studio DG Apps designs and builds mobile experiences that are clean,
+          easy to use, and focused on helping people enjoy small parts of their day.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#apps">View Apps</a>
+          <a class="button secondary" href="support.html">Contact Support</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Studio DG Apps highlight card">
+        <div class="app-icon">SWN</div>
+        <h2>Say What Now?</h2>
+        <p>
+          A fast, fun phrase-unscrambling game with multiple modes, daily puzzles,
+          hints, and progress tracking.
+        </p>
+        <a class="text-link" href="https://apps.apple.com/app/id6740370659" target="_blank" rel="noopener">
+          View on the App Store
+        </a>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Apps</p>
+        <h2>Made for iPhone and iPad</h2>
+        <p>
+          A growing collection of independently built apps across games,
+          lifestyle, reminders, and daily utility.
+        </p>
+      </div>
+
+      <div class="grid">
+        <!-- APP CARD: Say What Now? -->
+        <article class="card">
+          <div class="card-topline">Word Game</div>
+          <h3>Say What Now?</h3>
+          <p>
+            Unscramble phrases across Standard, Timed, Challenge, and Daily Puzzle modes.
+            Built for quick sessions, replayability, and steady progress.
+          </p>
+          <div class="card-actions">
+            <a href="https://apps.apple.com/app/id6740370659" target="_blank" rel="noopener">View on App Store</a>
+            <a href="support.html">Get support</a>
+          </div>
+        </article>
+
+        <!-- APP CARD: Fit Check Pro -->
+        <article class="card">
+          <div class="card-topline">Style & Outfit Tracker</div>
+          <h3>Fit Check Pro</h3>
+          <p>
+            Save, organize, and review your outfits so you can keep track of your style,
+            plan looks, and build a better wardrobe over time.
+          </p>
+          <div class="card-actions">
+            <a href="https://apps.apple.com/us/app/fit-check-pro/id6733221964" target="_blank" rel="noopener">View on App Store</a>
+            <a href="support.html">Get support</a>
+          </div>
+        </article>
+
+        <!-- APP CARD: Minesweeper Reimagined -->
+        <article class="card">
+          <div class="card-topline">Puzzle Game</div>
+          <h3>Minesweeper Reimagined</h3>
+          <p>
+            A refreshed take on the classic minesweeper experience, designed for simple,
+            focused puzzle sessions with a cleaner modern feel.
+          </p>
+          <div class="card-actions">
+            <a href="https://apps.apple.com/us/app/minesweeper-reimagined/id6740152764" target="_blank" rel="noopener">View on App Store</a>
+            <a href="support.html">Get support</a>
+          </div>
+        </article>
+
+        <!-- APP CARD: Dates Reminders -->
+        <article class="card">
+          <div class="card-topline">Reminders & Planning</div>
+          <h3>Dates Reminders</h3>
+          <p>
+            Keep track of important dates, recurring reminders, and upcoming moments
+            in a simple app built to help you stay prepared.
+          </p>
+          <div class="card-actions">
+            <a href="https://apps.apple.com/us/app/dates-reminders/id6698850287" target="_blank" rel="noopener">View on App Store</a>
+            <a href="support.html">Get support</a>
+          </div>
+        </article>
+
+        <!--
+          FUTURE APP CARD TEMPLATE:
+          Copy this whole article block and paste it below when you release another app.
+
+          <article class="card">
+            <div class="card-topline">Category</div>
+            <h3>App Name</h3>
+            <p>
+              Short, clear description of what the app does and why people would use it.
+            </p>
+            <div class="card-actions">
+              <a href="APP_STORE_LINK_HERE" target="_blank" rel="noopener">View on App Store</a>
+              <a href="support.html">Get support</a>
+            </div>
+          </article>
+        -->
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Purpose</p>
+        <h2>Designed with care, shipped independently.</h2>
+      </div>
+      <p>
+        This site is the official developer website for Studio DG Apps. It provides
+        support information, privacy information, and developer verification files for
+        app advertising platforms.
+      </p>
+    </section>
+
+    <!--
+      FUTURE SECTION IDEA:
+      You can add a "Coming Soon" section here later for upcoming apps,
+      beta testing links, or a newsletter/contact form.
+    -->
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Studio DG Apps. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="app-ads.txt">app-ads.txt</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
