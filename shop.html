@@ -1,47 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop the Look — Fit Check Pro</title>
-<style>
-  body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 680px; margin: 60px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.5; }
-  h1 { font-size: 28px; margin-bottom: 8px; }
-  .disclosure { background: #f5f5f5; border-radius: 8px; padding: 14px 16px; font-size: 13px; color: #555; margin: 20px 0 32px; }
-  .product { display: block; border: 1px solid #e0e0e0; border-radius: 12px; padding: 16px; margin-bottom: 14px; text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
-  .product:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-  .product-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; }
-  .product-note { font-size: 13px; color: #777; }
-  footer { margin-top: 48px; font-size: 12px; color: #999; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shop products we recommend, curated to pair with Fit Check Pro." />
+  <title>Shop — Studio DG Apps</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Studio DG Apps</a>
+      <div class="nav-links">
+        <a href="index.html#apps">Apps</a>
+        <a href="shop.html">Shop</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Shop</p>
+        <h2>Shop the Look</h2>
+        <p class="lead">
+          A few pieces we like, picked to pair well with what's in your Fit Check Pro closet.
+        </p>
+        <p style="font-size: 13px; color: #777; margin-top: 12px;">
+          <strong>Affiliate Disclosure:</strong> Some links below are affiliate links. If you make a purchase
+          through one, Studio DG Apps may earn a commission at no extra cost to you. We only link to
+          products we'd actually recommend.
+        </p>
+      </div>
+      <div class="grid">
+        <!-- PRODUCT CARD: replace href below with your real Sovrn redirect link -->
+        <article class="card">
+          <div class="card-topline">Retailer Name</div>
+          <h3>Product Name Here</h3>
+          <p>
+            Short description of the product — from $XX.XX.
+          </p>
+          <div class="card-actions">
+            <a href="https://redirect.viglink.com?u=REPLACE_WITH_ENCODED_PRODUCT_URL&key=REPLACE_WITH_YOUR_API_KEY"
+               target="_blank" rel="noopener sponsored">
+              Shop Now
+            </a>
+          </div>
+        </article>
+        <!--
+          FUTURE PRODUCT CARD TEMPLATE:
+          Copy this whole article block and paste it below to add more products.
+          Build each Sovrn link as:
+          https://redirect.viglink.com?u=<ENCODED_PRODUCT_URL>&key=<YOUR_API_KEY>
 
-<h1>Shop the Look</h1>
-<p>A few pieces we like, picked to pair with what's in your Fit Check Pro closet.</p>
-
-<div class="disclosure">
-  <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you make a purchase through one, Studio DG Apps may earn a commission at no extra cost to you. We only link to products we'd actually recommend.
-</div>
-
-<!--
-  HOW TO FILL THIS IN:
-  1. Get your Sovrn Commerce API key: Settings -> click the key icon next to your campaign.
-  2. Take a real product URL (e.g. a Macy's product page) and URL-encode it.
-  3. Build the link: https://redirect.viglink.com?u=<ENCODED_PRODUCT_URL>&key=<YOUR_API_KEY>
-  4. Paste that full URL into the href below, replacing the placeholder.
-  5. Push this file live, then click the link yourself once (a real click, from a real browser)
-     to generate the traffic Sovrn needs to trigger their review.
--->
-
-<a class="product" href="https://redirect.viglink.com?u=REPLACE_WITH_ENCODED_PRODUCT_URL&key=REPLACE_WITH_YOUR_API_KEY">
-  <div class="product-name">Product Name Here</div>
-  <div class="product-note">Retailer — from $XX.XX</div>
-</a>
-
-<footer>
-  <p>&copy; Studio DG Apps. This page contains affiliate links.</p>
-</footer>
-
+          <article class="card">
+            <div class="card-topline">Retailer Name</div>
+            <h3>Product Name</h3>
+            <p>Short description — from $XX.XX.</p>
+            <div class="card-actions">
+              <a href="SOVRN_LINK_HERE" target="_blank" rel="noopener sponsored">Shop Now</a>
+            </div>
+          </article>
+        -->
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Studio DG Apps. This page contains affiliate links.</p>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="app-ads.txt">app-ads.txt</a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
